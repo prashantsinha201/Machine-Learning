@@ -1,4 +1,5 @@
-dataset: https://archive.ics.uci.edu/ml/datasets/Wholesale+customers
+#dataset: https://archive.ics.uci.edu/ml/datasets/Wholesale+customers 
+# I have directly downloaded the csv file in the read.csv command.
 
 data <-read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00292/Wholesale%20customers%20data.csv",header=T)
 
