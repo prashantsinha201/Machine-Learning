@@ -68,6 +68,9 @@ for(v in rng){ # For each value of the range variable
 plot(rng,avg.totw.ss,type="b", main="Total Within SS by Various K",
      ylab="Average Total Within Sum of Squares",
      xlab="Value of K")
-
 #This plot doesn’t show a very strong elbow.  Somewhere around K = 5 we start losing dramatic gains.  
 #So we are satisfied with 5 clusters.
+
+#Let's plot the clusters.
+library(cluster)
+clusplot(data.rm.top[,-c(1,2)], k$cluster, color = T, shade = T, labels = 2, lines = 0)
